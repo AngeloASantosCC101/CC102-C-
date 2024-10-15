@@ -34,20 +34,21 @@ int main()
         float usdToPhp = 57.28, poundToPhp = 74.75;
         float totalCostPHP, sugarCostPHP, riceCostPHP, sardinesCostPHP, coffeeCostPHP, milkCostPHP;
         //calculation
-        sugarCostPHP = (sugarPriceUSD * usdToPhp) * sugarQty;
-        riceCostPHP = (ricePricePound * poundToPhp) * riceQty;
-        sardinesCostPHP = (sardinesPricePound * poundToPhp) * sardinesQty;
-        coffeeCostPHP = (coffeePriceUSD * usdToPhp) * coffeeQty;
-        milkCostPHP = (milkPriceUSD * usdToPhp) * milkQty;
+        sugarCostPHP = (sugarPriceUSD * sugarQty) * usdToPhp;
+        riceCostPHP = (ricePricePound * riceQty) * poundToPhp;
+        sardinesCostPHP = (sardinesPricePound * sardinesQty) * poundToPhp;
+        coffeeCostPHP = (coffeePriceUSD * coffeeQty) * usdToPhp;
+        milkCostPHP = (milkPriceUSD * milkQty) * usdToPhp;
         totalCostPHP = sugarCostPHP + riceCostPHP + sardinesCostPHP + coffeeCostPHP, milkCostPHP;
         //output 
+        cout << "1$ = PHP57.28\n";
+        cout << "1Pound = PHP74.75\n";
         cout << "Purchase Details\n";
-        cout << "sugar quantity : " << sugarQty << "  total cost : PHP" << sugarCostPHP <<endl;
-        cout << "rice quantity : " << riceQty << "  total cost : PHP" << riceCostPHP <<endl;
-        cout << "sardines quantity : " << sardinesQty << "  total cost : PHP" << sardinesCostPHP <<endl;
-        cout << "coffee quanity : " << coffeeQty << " total cost : PHP" << coffeeCostPHP  <<endl;
-        cout << "milk quantity : " << milkQty << "  total cost : PHP" << milkCostPHP <<endl;
+        cout << "sugar quantity    : " << sugarQty << "  total cost : " << sugarCostPHP <<endl;
+        cout << "rice quantity     : " << riceQty << "  total cost : " << riceCostPHP <<endl;
+        cout << "sardines quantity : " << sardinesQty << "  total cost : " << sardinesCostPHP <<endl;
+        cout << "coffee quanity    : " << coffeeQty << " total cost : " << coffeeCostPHP  <<endl;
+        cout << "milk quantity     : " << milkQty << "  total cost : " << milkCostPHP <<endl;
         cout << "total amount to be paid : PHP" <<totalCostPHP <<endl;
         return 0;
 }
-	
