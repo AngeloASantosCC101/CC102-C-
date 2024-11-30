@@ -14,12 +14,12 @@ int main() {
 
 //F
     cout << "\nf:\n";
-	for (int i = 0; i < 8; i++) {
+	for (int i = 0; i < 10; i++) {
 		for (int j = 0; j < i; j++) {
 			cout << " " << symbol1;
 		}
 		cout << " ";
-		for (int j = i + 1; j < 8; j++) {
+		for (int j = i + 1; j < 10; j++) {
 			cout << " " << symbol1;
 		}
 		cout << endl;
