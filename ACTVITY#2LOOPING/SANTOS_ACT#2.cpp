@@ -13,7 +13,7 @@ int main() {
     cout << "\nYou picked: " << symbol1 << " " << symbol2 << " " << symbol3 << "\n";
 
 //F
-    cout << "\ng:\n";
+    cout << "\nf:\n";
 	for (int i = 0; i < 8; i++) {
 		for (int j = 0; j < i; j++) {
 			cout << " " << symbol1;
@@ -37,13 +37,13 @@ int main() {
     }
 	//H
     cout << "\nh:\n";
-    for (int i = 0; i <= 8; i++) {
+    for (int i = 0; i <= 6; i++) {
       for (int j = 0; j < i; j++) {
          cout << " " <<symbol1;
       }
       cout << " " <<symbol2 << endl;
    }
-   for (int i = 8; i >= 0; i--) {
+   for (int i = 6; i >= 0; i--) {
       for (int j = 0; j < i; j++) {
          cout << " " <<symbol1;
 		}
